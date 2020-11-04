@@ -1,2 +1,3 @@
 # Debug
-Debugging tools
+
+Macros to facilitate debugging
