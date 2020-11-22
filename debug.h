@@ -12,7 +12,7 @@
 
 # define ANSI_RESET			"\033[0m"
 
-# define DEBUG(msg,...) fprintf(stderr, BOLDGREEN"[LOG](%s:%d)" RED msg ANSI_RESET"\n" , __FILE__, __LINE__, ##__VA_ARGS__)
+# define DEBUG(msg,...) fprintf(stderr, BOLD GREEN"[LOG](%s:%d)" RED msg ANSI_RESET"\n" , __FILE__, __LINE__, ##__VA_ARGS__)
 
 _HIDDEN_ void _intp		(int *ptr,	size_t len)	{size_t i; i = 0;while (i < len) {printf("%d\n", ptr[i]); i++;};}
 _HIDDEN_ void _boolp	(bool *ptr, size_t len)	{size_t i; i = 0;while (i < len) {ptr[i] == true ? printf("True\n") : printf("False\n"); i++;}}
